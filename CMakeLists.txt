@@ -9,7 +9,7 @@ include_directories(lib)
 
 file(GLOB SOURCES "src/*.c")
 
-add_executable(foo scr/main.c)
+add_executable(foo ${SOURCES})
 
 file(GLOB ESPL_LIB_SRCS "lib/*.c")
 add_library(ESPL_LIB ${ESPL_LIB_SRCS})

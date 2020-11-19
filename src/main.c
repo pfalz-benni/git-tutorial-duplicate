@@ -13,7 +13,7 @@ int main(int argc, char* argv[]) {
         getchar(); //scanf() leafes a \n in the input buffer. getchar() cleans it up
         printf("%s\n", num_to_words(inputNumber));
 
-        printf("Do you want to enter another number? (y/n) ");
+        printf("Do you want to enter another number? (y/other char) ");
         scanf("%c", &enterAnotherNumber);
         getchar();
     } while(enterAnotherNumber == 'y');
